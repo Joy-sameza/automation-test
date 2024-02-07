@@ -16,3 +16,18 @@ jobs:
         with:
           name: weather-app
           path: dist
+  release-app:
+    name: Release project
+    needs: build-app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download static site content
+        uses: actions/download-artifact@v4
+        with:
+          name: weather-app
+      - name: Test artifact download
+        run: ls -R
+      # - name: Release project
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     files: dist
