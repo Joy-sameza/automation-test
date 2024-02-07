@@ -1,7 +1,1 @@
-.dockerignore
-.git
-.gitignore
-.github/
-Dockerfile
 node_modules/
-README.md
