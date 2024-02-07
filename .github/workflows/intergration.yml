@@ -12,7 +12,7 @@ jobs:
       - name: Build weather app
         run: npm run build
       - name: Upload static site content
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: weather-app
           path: dist
