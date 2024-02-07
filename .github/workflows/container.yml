@@ -13,7 +13,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
       - name: Build and push to Docker Hub
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/weather-app:latest, ${{ secrets.DOCKER_HUB_USERNAME }}/weather-app:${{ github.run_number }}
