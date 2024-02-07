@@ -4,5 +4,8 @@ jobs:
     runs-on: ubuntu-latest
     container: node:20
     steps:
-        - run: node --version
-        - run: npm --version
+      - run: node --version
+      - run: npm --version
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: npm start
