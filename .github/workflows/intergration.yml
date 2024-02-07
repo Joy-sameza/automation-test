@@ -27,7 +27,7 @@ jobs:
           name: weather-app
       - name: Test artifact download
         run: ls -R
-      # - name: Release project
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     files: dist
+      - name: Release project
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist
