@@ -1,10 +1,13 @@
 {
-  "name": "automation-test",
+  "name": "automation-test-for-weater-app",
   "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "description": "Testing Automation with GitHub Actions",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   },
   "homepage": "https://github.com/Joy-sameza/automation-test#readme",
   "dependencies": {
-    "moment": "^2.30.1"
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
   }
 }
