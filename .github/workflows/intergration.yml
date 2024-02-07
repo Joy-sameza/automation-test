@@ -47,5 +47,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_new_release.outputs.upload_url }}
           asset_path: dist.zip
-          asset_name: weather-app-v${{ github.ref }}.zip
+          asset_name: weather-app-v${{ github.run_number }}.zip
           asset_content_type: application/zip
